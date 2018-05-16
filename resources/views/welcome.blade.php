@@ -17,49 +17,45 @@
 </head>
 <body>
 <header id="header_area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
 
-            </div>
-        </div>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{url('/')}}">Contact Manager</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="{{url('/')}}">Contact Manager</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url('/')}}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-            </ul>
-            @if (Route::has('login'))
-                <div class="top-right lf_auth_links">
-                    @auth
-                    @else
-                        <a class="btn btn-success" href="{{ route('login') }}">Login</a>
-                        <a class="btn btn-info" href="{{ route('register') }}">Register</a>
-                    @endauth
-                    <div class="clearfix"></div>
-                </div>
-            @endif
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url('/')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                </ul>
+                @if (Route::has('login'))
+                    <div class="top-right lf_auth_links">
+                        @auth
+                        @else
+                            <a class="btn btn-success" href="{{ route('login') }}">Login</a>
+                            <a class="btn btn-info" href="{{ route('register') }}">Register</a>
+                        @endauth
+                        <div class="clearfix"></div>
+                    </div>
+                @endif
+            </div>
         </div>
     </nav>
 </header>
 
 <section id="content">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron">
-                    <h1 class="display-3">Contact Manager</h1>
+                    <h1 class="display-4">Contact Manager</h1>
                     <p class="lead">Manage Your Contacts In a Smart Way.</p>
                     <hr class="my-4">
                     <p>Manage all your contacts with name,phone,address,picture,email. And find instantly by live
@@ -73,10 +69,10 @@
     </div>
 </section>
 <section class="features">
-    <div class="container-fluid ">
+    <div class="container ">
         <div class="row">
             <div class="col-md-4 text-center">
-                <div class="card text-white bg-dark mb-3" >
+                <div class="card text-white bg-dark mb-3">
                     <div class="card-header">Unlimited</div>
                     <div class="card-body">
                         <h4 class="card-title">Unlimited Contacts</h4>
@@ -85,7 +81,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <div class="card text-white bg-dark mb-3"  >
+                <div class="card text-white bg-dark mb-3">
                     <div class="card-header">Live Search</div>
                     <div class="card-body">
                         <h4 class="card-title">Fastest Search</h4>
